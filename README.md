@@ -1,5 +1,4 @@
-### Direct Learning of Mesh and Appearance via 3D Gaussian
-Splatting
+### Direct Learning of Mesh and Appearance via 3D Gaussian Splatting
 - [ ] Clean codes thoroughly.
 - [x] Codes realeased.
 
