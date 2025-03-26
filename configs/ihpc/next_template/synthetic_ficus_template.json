@@ -1,0 +1,25 @@
+{
+    "source_path": "data/nerf_synthetic/ficus",
+    "coarse_mesh_path": "output/synthetic_s1/ficus/coarse_mesh.obj",
+    "s2_model_path": "output/next_tmp_synthetic_s2/ficus_$(expname)",
+    "s3_model_path": "output/tmp_synthetic_s3/ficus_$(expname)",
+    "eval": true,
+    "s2_iterations": 10000,
+    "s3_iterations": 5000,
+
+    "gs_per_face": 6,
+    "res_fg": 100,
+    
+    "sdf_lr": $(sdf_lr),
+    "deform_lr": 0.02,
+    "cube_weight_lr": 0.01,
+    "texture_lr": $(texture_lr),
+    "scale_factor_lr": $(scale_factor_lr),
+    "final_lr_rate": $(final_lr_rate),
+    "c2f_steps": [1000, 2000, 3000, 4000],
+    "c2f_rate": 1.5, 
+
+    "reg_decay_iter": 10000,
+    "lambda_sdf": $(lambda_sdf),
+    "lambda_flex": $(lambda_flex)
+}

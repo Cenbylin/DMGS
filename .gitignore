@@ -1,0 +1,14 @@
+*.pyc
+*.pth
+*.ply
+.vscode
+output
+output-std
+output_dyn
+build
+diff_rasterization/diff_rast.egg-info
+diff_rasterization/dist
+tensorboard_3d
+screenshots
+data
+experiments
