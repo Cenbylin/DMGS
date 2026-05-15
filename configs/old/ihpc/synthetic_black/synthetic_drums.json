@@ -1,0 +1,38 @@
+{
+    "source_path": "data/nerf_synthetic/drums",
+    "coarse_mesh_path": "output/synthetic_s1/drums/coarse_mesh.obj",
+    "s2_model_path": "output/tmp_synthetic_s2/drums",
+    "s3_model_path": "output/tmp_synthetic_s3/drums",
+    "eval": true,
+    "s2_iterations": 10000,
+    "s3_iterations": 7000,
+
+    "gs_per_face": 6,
+    "res_fg": 100,
+    
+    "sdf_lr": 0.001,
+    "deform_lr": 0.02,
+    "cube_weight_lr": 0.01,
+    "texture_lr": 0.001,
+    "scale_factor_lr": 0.0005,
+    "final_lr_rate": 0.05,
+    "c2f_steps": [1000, 2000, 3000, 4000],
+    "c2f_rate": 1.5, 
+
+    "reg_decay_iter": 10000,
+    "lambda_sdf": [0.2, 0.01],
+    "lambda_flex": [0.2, 0.05],
+
+    "s3_gs_per_face": 6,
+    "simplify_nface": 100000,
+    "init_opacity": 0.1,
+    "vert_lr": 0.00005,
+    "vert_lr_final": null,
+    "feature_lr": 0.05,
+    "opacity_lr": 0.01,
+    "scaling_lr": 0.01,
+    "rotation_lr": 0.005,
+    "lambda_laplace": 0.001,
+    "lambda_normal_consistency": 0.001,
+    "use_frustum": false
+}

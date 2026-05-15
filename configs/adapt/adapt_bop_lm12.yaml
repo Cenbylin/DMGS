@@ -1,0 +1,10 @@
+base_config: "base.yaml"
+shape_name: "bop_lm_t1"
+adapt_shape_name: "bop_lm_t2"
+
+alpha_shape: 0.05
+watertight_res: 10_000
+
+c2f_steps_adapt: [1000, 3000, 5000, 7000]
+
+res_fg: 100

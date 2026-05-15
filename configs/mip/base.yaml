@@ -1,0 +1,59 @@
+shape_name: ???
+exp_name_s1: "mipnerf360_s1"
+exp_name_s2: "mipnerf360_s2"
+exp_name_s3: "mipnerf360_s3"
+source_path: "data/mip-nerf360/${shape_name}"
+images: ???
+data_device: "cpu"
+white_background: ???
+eval: true
+coarse_mesh_path: "output/${exp_name_s1}/${shape_name}/coarse_mesh.obj"
+coarse_gs_path: "output/${exp_name_s1}/${shape_name}/chkpnt${s1_iterations}.pth"
+s1_model_path: "output/${exp_name_s1}/${shape_name}"
+s2_model_path: "output/${exp_name_s2}/${shape_name}"
+s3_model_path: "output/${exp_name_s3}/${shape_name}"
+s1_iterations: 20000
+s2_iterations: 8000
+s3_iterations: 5000
+batchsize: 4
+
+# stage-1: create coarse mesh
+densify_until_iter: 10000
+alpha_shape: 0.1
+watertight_res: 50000
+
+# stage-2: create mesh for foreground
+aabb_fg: ???
+gs_per_face: 3
+res_fg: ???
+c2f_steps: [1000, 2000, 3000, 4000]  # prevent missing details. old: [1500, 3000, 4500, 6000]
+c2f_rate: 1.5
+adaptive_cov: true
+
+sdf_lr: 0.005
+deform_lr: 0.01
+final_lr_rate: 0.01
+texture_lr: 0.001
+scale_factor: 1.0
+
+reg_decay_iter: ${s2_iterations}
+lambda_sdf: [1.5, 0.1]
+lambda_flex: [0.5, 0.1]
+lambda_inv_depth: 0.0
+lambda_tv_depth: 0.0
+lambda_normal_consistent: 0.0
+
+# stage-3: fine-tune
+s3_gs_per_face: 6
+simplify_nface: 500000
+init_opacity: 0.1
+vert_lr: 0.0001
+vert_lr_final: null
+position_lr_final: 0.0000016
+feature_lr: 0.0025
+opacity_lr: 0.01
+scaling_lr: 0.005
+rotation_lr: 0.005
+reset_opacity_steps: [500, 1500, 3000]
+lambda_laplace_s3: 0.0
+lambda_normal_consistent_s3: 0.001

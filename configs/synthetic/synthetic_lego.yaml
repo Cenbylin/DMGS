@@ -1,0 +1,4 @@
+base_config: "base.yaml"
+shape_name: "lego"
+
+res_fg: 100

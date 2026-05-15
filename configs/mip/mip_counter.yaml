@@ -1,0 +1,7 @@
+base_config: "base.yaml"
+shape_name: "counter"
+images: "images_2"
+
+# stage-2: create mesh for foreground
+aabb_fg: [[-3, -1., -5], [5., 5, 5]]
+res_fg: 200

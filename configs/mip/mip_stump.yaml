@@ -1,0 +1,7 @@
+base_config: "base.yaml"
+shape_name: "stump"
+images: "images_4"
+
+# stage-2: create mesh for foreground
+aabb_fg: [[-4, -1., -1.], [4, 4, 4]]
+res_fg: 150

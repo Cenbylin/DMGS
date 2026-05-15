@@ -1,0 +1,4 @@
+base_config: "base.yaml"
+shape_name: "chair"
+
+res_fg: 100

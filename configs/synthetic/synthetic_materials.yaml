@@ -1,0 +1,4 @@
+base_config: "base.yaml"
+shape_name: "materials"
+
+res_fg: 100

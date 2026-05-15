@@ -1,0 +1,4 @@
+base_config: "base.yaml"
+shape_name: "ship"
+
+res_fg: 128

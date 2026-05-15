@@ -1,0 +1,10 @@
+base_config: "base.yaml"
+shape_name: "lego_init"
+adapt_shape_name: "lego_final"
+
+alpha_shape: 0.05
+watertight_res: 10_000
+
+c2f_steps_adapt: []
+
+res_fg: 100

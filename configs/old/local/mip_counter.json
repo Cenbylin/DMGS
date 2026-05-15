@@ -1,0 +1,29 @@
+{
+    "source_path": "data/mip-nerf360/counter",
+    "images": "images_2",
+    "coarse_mesh_path": "output/mipnerf360_s1/counter/coarse_mesh.obj",
+    "s2_model_path": "output/tmp_mipnerf360_s2/counter",
+    "s3_model_path": "output/tmp_mipnerf360_s3/counter",
+    "eval": true,
+    "s2_iterations": 10000,
+    "s3_iterations": 1000,
+    "warm_up_iter": 1000,
+
+    "aabb_fg_bg": [[[-3, -1.0, -5], [5.0, 5, 5]],
+                   [[-12, -8, -10], [13, 13, 17]]],
+    "gs_per_face": 3,
+    "res_fg": 180,
+    "res_bg": 200,
+    "c2f_steps": [1000, 2000, 3000, 4000],
+
+    "sdf_lr": 0.003,
+    "deform_lr": 0.02,
+    "sdf_lr_bg": 0.003,
+    "deform_lr_bg": 0.02,
+    "texture_lr": 0.01,
+    "scale_factor_lr": 0.0005,
+    
+    "reg_decay_iter": 5000,
+    "lambda_sdf": [0.3, 0.1],
+    "lambda_flex": [0.1, 0.05]
+}

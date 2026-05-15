@@ -1,0 +1,7 @@
+base_config: "base.yaml"
+shape_name: "room"
+images: "images_2"
+
+# stage-2: create mesh for foreground
+aabb_fg: [[-4.3, -4, -3.5], [4.7, 6, 7.0]]
+res_fg: 200

@@ -1,0 +1,4 @@
+base_config: "base.yaml"
+shape_name: "hotdog"
+
+res_fg: 100

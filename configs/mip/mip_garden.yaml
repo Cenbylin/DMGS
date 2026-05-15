@@ -1,0 +1,7 @@
+base_config: "base.yaml"
+shape_name: "garden"
+images: "images_4"
+
+# stage-2: create mesh for foreground
+aabb_fg: [[-3.5, -0.1, -3], [3.5, 5, 5]]
+res_fg: 150
